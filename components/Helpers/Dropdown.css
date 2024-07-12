@@ -1,0 +1,199 @@
+.my-select-box {
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+}
+.my-select-box .my-select-box-btn {
+  width: 100%;
+  height: 60px;
+  float: none;
+  border: 2px solid #ededed;
+  border-radius: 10px;
+  line-height: 55px;
+  color: #999;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 4%);
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.my-select-box .my-select-box-section {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(68 68 68 / 11%);
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+}
+.my-select-box .my-select-box-section.open {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+  visibility: visible;
+}
+.my-select-box .my-select-box-section ul {
+  padding: 0;
+}
+.my-select-box .my-select-box-section li {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.my-select-box .my-select-box-section li:hover {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+.my-select-box .my-select-box-section li.selected {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+.my-select-box .my-select-box-btn > span {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+* App.css */
+
+.App {
+    font-family: Arial, sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hamburger-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .main-menu, .secondary-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black;
+    border-bottom: 20px solid #ddd;
+  }
+  
+  .left-menu a, .right-menu a, .dropdown-content a {
+    margin: 0 20px;
+    text-decoration: none;
+    color:white;
+  }
+  
+  .secondary-menu .logo {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: gray;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color:red;
+    background-image: src("");
+  }
+  
+  .image-item {
+    width: 30%;
+    height: 200px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  
+  .follow-us {
+    text-align: center;
+    padding: 60px 0;
+    background-color: whitesmoke;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    background-image: src("my-react-app/src/components/Facebook_icon.jpg");
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: grey;
+    border-top: 1px solid red;
+  }
+
+
+
+
+
+
+
+   
